@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: gaza-be
+  labels:
+    app: gaza-be
+spec:
+  containers:
+    - name: gaza-be
+      image: ahmedyousseff/gaza-be:v1
+      imagePullPolicy: IfNotPresent
+  restartPolicy: Always
+
